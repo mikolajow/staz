@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RandomTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-11T13:29:22" hostname="WRO1-LDL-P11456" time="0.01">
+  <properties/>
+  <testcase name="dateTest" classname="RandomTests" time="0.01"/>
+  <system-out><![CDATA[year= 119 month= 6 day= 4
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
