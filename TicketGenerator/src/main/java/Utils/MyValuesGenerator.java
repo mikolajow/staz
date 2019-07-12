@@ -1,8 +1,8 @@
 package Utils;
 
 import com.github.javafaker.Faker;
-
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class MyValuesGenerator {
 
@@ -38,17 +38,22 @@ public class MyValuesGenerator {
         add("Turkey Mobile Pass");
     }};
 
+    private final static int passportDigitsNumber = 8;
+
 
     public static String passportNumber() {
-        int[] ints = new Random().ints(8, 48, 91).toArray();
-        return new String(ints, 0, 8);
+        int[] ints = new Random().ints(passportDigitsNumber, 48, 91).toArray();
+        String passportNumber = new String(ints, 0, passportDigitsNumber);
+        return passportNumber;
     }
 
 
-    public static String name() {
-        String firstName = faker.name().firstName();
-        String lastName = faker.name().lastName();
-        return firstName + " " + lastName;
+    public static String firstName() {
+        return faker.name().firstName();
+    }
+
+    public static String lastName() {
+        return faker.name().lastName();
     }
 
 
@@ -93,19 +98,14 @@ public class MyValuesGenerator {
     }
 
 
+    public static Date date() {
+        double random = Math.random();
 
-
-
-
-
-    public static Date dateBetween(Date startDate, Date finishDate) {
-        return faker.date().between(startDate, finishDate);
+        if (random > 0.5)
+            return faker.date().future(77760, TimeUnit.HOURS); // około 9 lat
+        else
+            return faker.date().past(77760, TimeUnit.HOURS); // około 9 lat
     }
-
-
-
-
-
 
 
     private enum AgeGroups {

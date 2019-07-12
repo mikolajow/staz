@@ -1,7 +1,17 @@
+import DataTemplates.EPassDetails;
+import DataTemplates.Ticket;
+import TicketSaver.LocalDateAdapter;
+import TicketSaver.LocalDateTimeAdapter;
+import TicketSaver.SaverForTicket;
 import com.github.javafaker.Faker;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.junit.Test;
 
 
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.*;
 
 public class RandomTests {
@@ -9,11 +19,90 @@ public class RandomTests {
 
 
 
+    @Test
+    public void ticketConstructionTest() {
+
+        Ticket ticket = new Ticket(Ticket.ValidityState.VALID_TODAY, EPassDetails.PassStatus.VALID);
+
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
+                .create();
+
+        System.out.println();
+        System.out.println("JSON = ");
+        System.out.println(gson.toJson(ticket));
+
+        try {
+            SaverForTicket.saveTicketToJsonFile(ticket, "valid.json");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        System.out.println();
+        System.out.println("TICKET = ");
+        System.out.println(ticket);
+    }
+
+    @Test
+    public void ticketConstructionTest2() {
+
+        Ticket ticket = new Ticket(Ticket.ValidityState.NOT_VALID, EPassDetails.PassStatus.EXPIRED);
+
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
+                .create();
+
+        System.out.println();
+        System.out.println("JSON = ");
+        System.out.println(gson.toJson(ticket));
+
+        try {
+            SaverForTicket.saveTicketToJsonFile(ticket, "not_valid.json");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        System.out.println();
+        System.out.println("TICKET = ");
+        System.out.println(ticket);
+    }
 
 
 
 
+    @Test
+    public void fromFileTicketConstructionTest() {
 
+        Ticket ticket = new Ticket(Ticket.ValidityState.NOT_VALID, EPassDetails.PassStatus.EXPIRED,
+                "C:\\Users\\mikolaj.kasperek\\IdeaProjects\\TicketGenerator\\ExampleTravelerData.json");
+
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
+                .create();
+
+        System.out.println();
+        System.out.println("JSON = ");
+        System.out.println(gson.toJson(ticket));
+
+        try {
+            SaverForTicket.saveTicketToJsonFile(ticket, "not_valid.json");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        System.out.println();
+        System.out.println("TICKET = ");
+        System.out.println(ticket);
+    }
 
 
 

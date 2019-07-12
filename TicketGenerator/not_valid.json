@@ -1,0 +1,18 @@
+{
+  "validityState": "NOT_VALID",
+  "activationDate": "2017-02-23T21:37:27.000",
+  "validityDate": "2017-02-23",
+  "ePassDetails": {
+    "kind": "France Mobile Pass",
+    "type": "1st class Senior ",
+    "traveler": {
+      "fullNameSecured": "D. D********k",
+      "passportNumberSecured": "********D4"
+    },
+    "status": "EXPIRED",
+    "validityPeriod": {
+      "startDate": "2017-02-17",
+      "endDate": "2017-03-29"
+    }
+  }
+}

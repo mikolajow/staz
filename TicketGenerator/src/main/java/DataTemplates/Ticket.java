@@ -4,14 +4,16 @@
 package DataTemplates;
 
 
+import Utils.MyValuesGenerator;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Random;
 
 
 public class Ticket {
 
-    // todo save to json file
-    private final String fileSavePath;
 
     private ValidityState validityState;
 
@@ -21,9 +23,8 @@ public class Ticket {
     private EPassDetails ePassDetails;
 
 
-    public Ticket(ValidityState ticketStatus, EPassDetails.PassStatus ePassStatus, String fileSavePath) {
+    public Ticket(ValidityState ticketStatus, EPassDetails.PassStatus ePassStatus) {
         this.validityState = ticketStatus;
-        this.fileSavePath = fileSavePath;
 
         generateActivationAndValidityDate();
 
@@ -31,10 +32,8 @@ public class Ticket {
     } // random traveler constructor
 
 
-    public Ticket(ValidityState ticketStatus, EPassDetails.PassStatus ePassStatus,
-                  String fileSavePath, String externalDataFilePath) {
+    public Ticket(ValidityState ticketStatus, EPassDetails.PassStatus ePassStatus, String externalDataFilePath) {
         this.validityState = ticketStatus;
-        this.fileSavePath = fileSavePath;
 
         generateActivationAndValidityDate();
 
@@ -42,14 +41,25 @@ public class Ticket {
     } // File traveler constructor
 
 
-
-
-
     private void generateActivationAndValidityDate() {
         if (this.validityState.equals(ValidityState.NOT_VALID) ||
                 this.validityState.equals(ValidityState.NOT_STARTED)) {
-            this.validityDate = null;
-            this.activationDate = null;
+
+            Date randomDate = MyValuesGenerator.date();
+
+            int year = 1900 + randomDate.getYear();
+            int month = 1 + randomDate.getMonth();
+            int day = randomDate.getDate();
+
+            Random generator = new Random();
+            int hour = generator.nextInt(24);
+            int minute = generator.nextInt(60);
+            int second = generator.nextInt(60);
+            int millisecond = generator.nextInt(1000);
+
+            this.validityDate = LocalDate.of(year, month, day);
+
+            this.activationDate = LocalDateTime.of(year, month, day, hour, minute, second, millisecond);
         } else if (this.validityState.equals(ValidityState.VALID_YESTERDAY)) {
             this.activationDate = LocalDateTime.now().minusDays(1);
             this.validityDate = LocalDate.now().minusDays(1);
@@ -60,9 +70,7 @@ public class Ticket {
     }
 
 
-
-
-    enum ValidityState {
+    public enum ValidityState {
         VALID_TODAY,
         VALID_YESTERDAY,
         NOT_STARTED,
@@ -70,6 +78,20 @@ public class Ticket {
     } // enum ValidityState
 
 
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+
+        stringBuilder
+                .append(validityState)
+                .append("\n")
+                .append(activationDate.format(DateTimeFormatter.ofPattern("yyyy-mm-dd'T'HH:mm:ss.SSS")))
+                .append("\n")
+                .append(validityDate)
+                .append("\n");
+
+        return stringBuilder.toString();
+    }
 } // class
 
 

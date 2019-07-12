@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RandomTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-11T13:29:22" hostname="WRO1-LDL-P11456" time="0.01">
+<testsuite name="RandomTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-12T08:13:49" hostname="WRO1-LDL-P11456" time="0.112">
   <properties/>
-  <testcase name="dateTest" classname="RandomTests" time="0.01"/>
-  <system-out><![CDATA[year= 119 month= 6 day= 4
+  <testcase name="fromFileTicketConstructionTest" classname="RandomTests" time="0.112"/>
+  <system-out><![CDATA[
+JSON = 
+{
+  "validityState": "NOT_VALID",
+  "activationDate": "2017-02-23T21:37:27.000",
+  "validityDate": "2017-02-23",
+  "ePassDetails": {
+    "kind": "France Mobile Pass",
+    "type": "1st class Senior ",
+    "traveler": {
+      "fullNameSecured": "D. D********k",
+      "passportNumberSecured": "********D4"
+    },
+    "status": "EXPIRED",
+    "validityPeriod": {
+      "startDate": "2017-02-17",
+      "endDate": "2017-03-29"
+    }
+  }
+}
+
+TICKET = 
+NOT_VALID
+2017-37-23T21:37:27.000
+2017-02-23
+
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
