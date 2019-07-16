@@ -4,6 +4,7 @@ import DataTemplates.Ticket;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -15,7 +16,7 @@ public class SaverForTicket {
 
     public static void saveTicketToJsonFile(Ticket ticketToSave, String filePath) throws IOException {
 
-            FileWriter writer = new FileWriter(filePath);
+            FileWriter writer = new FileWriter(new File(filePath));
 
             Gson gson = new GsonBuilder()
                     .setPrettyPrinting()

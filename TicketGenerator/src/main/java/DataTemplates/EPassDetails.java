@@ -1,8 +1,4 @@
 
-
-
-
-
 package DataTemplates;
 
 
@@ -21,6 +17,8 @@ public class EPassDetails {
     private Traveler traveler;
 
     private PassStatus status;
+
+
 
     private ValidityPeriod validityPeriod;
 
@@ -116,6 +114,12 @@ public class EPassDetails {
         VALID
     } // enum PassStatus
 
+
+
+
+    public PassStatus getEpassStatus() {
+        return this.status;
+    }
 
 } // class
 

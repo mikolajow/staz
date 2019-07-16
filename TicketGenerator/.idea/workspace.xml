@@ -2,45 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="705dd292-106c-44b5-a5bc-a29279fd64ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails$PassStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails$PassStatus.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Ticket$ValidityState.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Ticket$ValidityState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Traveler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Traveler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/ValidityPeriod.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/ValidityPeriod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SaverForTicket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utils/MyDatesForStatusesGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utils/MyValuesGenerator$AgeGroups.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utils/MyValuesGenerator$AgeGroups.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utils/MyValuesGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Utils/MyValuesGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/RandomTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/RandomTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/RandomTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/RandomTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-RandomTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-RandomTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/MainFx.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/gui/MainFx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/viewDirectory/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/viewDirectory/MainView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataTemplates/ValidityPeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataTemplates/ValidityPeriod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SaverForTicket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/MyValuesGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/MyValuesGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RandomTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RandomTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../grReq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../grReq/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/MainFx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/MainFx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/viewDirectory/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/viewDirectory/MainView.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -63,39 +43,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="110" column="19" lean-forward="true" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/MainFx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="840">
+              <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#209#210#0" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="method#start#0;class#MainFx#0" />
+                <element signature="method#initializeStageElements#0;class#MainFx#0" />
+                <element signature="method#onChooseSavePathClicked#0;class#MainFx#0" />
+                <element signature="method#onChooseTravelerDataClicked#0;class#MainFx#0" />
+                <element signature="method#createTicket#0;class#MainFx#0" />
+                <element signature="e#4657#4658#0" expanded="true" />
+                <element signature="method#showError#0;class#MainFx#0" />
+                <element signature="method#saveTicket#0;class#MainFx#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="501">
+              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Ticket#0;class#Ticket#0" />
+                <element signature="method#Ticket#1;class#Ticket#0" />
+                <element signature="method#generateActivationAndValidityDate#0;class#Ticket#0" />
               </folding>
             </state>
           </provider>
@@ -112,6 +90,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>onChooseSavePathClicked</find>
+      <find>getpa</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -127,19 +111,20 @@
         <option value="$PROJECT_DIR$/src/main/java/TicketSaver/LocalDateTimeAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/dwa.json" />
         <option value="$PROJECT_DIR$/banana.json" />
-        <option value="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataTemplates/ValidityPeriod.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/MyValuesGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java" />
         <option value="$PROJECT_DIR$/src/test/java/RandomTests.java" />
         <option value="$PROJECT_DIR$/ExampleTravelerData.json" />
         <option value="$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/MainView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/viewDirectory/MainView.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java" />
+        <option value="$USER_HOME$/Downloads/VALID_TODAY-VALID_2019-22-16T12-22-07-476.json" />
         <option value="$PROJECT_DIR$/src/main/java/gui/MainFx.java" />
       </list>
     </option>
@@ -165,6 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,6 +197,14 @@
               <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketSaver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -221,12 +215,24 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="viewDirectory" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,6 +401,8 @@
       <workItem from="1562828326841" duration="12457000" />
       <workItem from="1562847182408" duration="9677000" />
       <workItem from="1562908478680" duration="19258000" />
+      <workItem from="1563254580962" duration="5577000" />
+      <workItem from="1563263971687" duration="7001000" />
     </task>
     <servers />
   </component>
@@ -431,7 +439,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41392000" />
+    <option name="totallyTimeSpent" value="53970000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,8 +452,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19296375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -455,7 +464,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38353196" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35211268" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -494,9 +503,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils/MyDatesForStatusesGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/banana">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/banana" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -507,13 +514,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dwa.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dwa.json" />
     <entry file="file://$PROJECT_DIR$/src/main/java/TicketSaver/LocalDateAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -534,13 +535,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/banana.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/banana.json" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils/MyValuesGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -558,16 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/valid.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-63" />
@@ -580,39 +565,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RandomTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="101" column="29" lean-forward="true" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#dateTest#0;class#RandomTests#0" />
-            <element signature="method#passportNumberGeneratorTest#0;class#RandomTests#0" />
-            <element signature="method#dateGeneratorTest#0;class#RandomTests#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/BasicGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/MainWindow.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="72" selection-start-line="72" selection-end-line="77" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/BasicGui.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/MainWindow.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/ValidityPeriod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -635,26 +589,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="110" column="19" lean-forward="true" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -665,14 +599,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/MainFx.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/12.0.1/cef7346264945c58e3710955b176c799e0d435d3/javafx-fxml-12.0.1-sources.jar!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="235">
+          <caret line="1785" selection-start-line="1785" selection-end-line="1785" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/openjdk-11.0.2_windows-x64_bin/jdk-11.0.2/lib/src.zip!/java.base/java/io/FileWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/VALID_TODAY-VALID.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RandomTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="101" column="29" lean-forward="true" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#dateTest#0;class#RandomTests#0" />
+            <element signature="method#passportNumberGeneratorTest#0;class#RandomTests#0" />
+            <element signature="method#dateGeneratorTest#0;class#RandomTests#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/VALID_TODAY-VALID_2019-13-16T12-13-12-710.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Ticket#0;class#Ticket#0" />
+            <element signature="method#Ticket#1;class#Ticket#0" />
+            <element signature="method#generateActivationAndValidityDate#0;class#Ticket#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/VALID_TODAY-VALID_2019-22-16T12-22-07-476.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/ExampleTravelerData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/MainFx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+          <folding>
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="method#start#0;class#MainFx#0" />
+            <element signature="method#initializeStageElements#0;class#MainFx#0" />
+            <element signature="method#onChooseSavePathClicked#0;class#MainFx#0" />
+            <element signature="method#onChooseTravelerDataClicked#0;class#MainFx#0" />
+            <element signature="method#createTicket#0;class#MainFx#0" />
+            <element signature="e#4657#4658#0" expanded="true" />
+            <element signature="method#showError#0;class#MainFx#0" />
+            <element signature="method#saveTicket#0;class#MainFx#0" />
           </folding>
         </state>
       </provider>

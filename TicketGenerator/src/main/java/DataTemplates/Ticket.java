@@ -15,6 +15,7 @@ import java.util.Random;
 public class Ticket {
 
 
+
     private ValidityState validityState;
 
     private LocalDateTime activationDate;
@@ -91,6 +92,21 @@ public class Ticket {
                 .append("\n");
 
         return stringBuilder.toString();
+    }
+
+
+
+
+
+
+
+
+    public ValidityState getValidityState() {
+        return validityState;
+    }
+
+    public EPassDetails.PassStatus getePassDetailsStatus() {
+        return ePassDetails.getEpassStatus();
     }
 } // class
 
