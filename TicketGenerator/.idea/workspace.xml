@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="705dd292-106c-44b5-a5bc-a29279fd64ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -12,15 +11,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails$PassStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails$PassStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/MainFx.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/gui/MainFx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/viewDirectory/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/viewDirectory/MainView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/MainFx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/MainFx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/viewDirectory/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/viewDirectory/MainView.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -46,34 +38,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/MainFx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+            <state relative-caret-position="35">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
-                <element signature="e#652#653#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
                 <element signature="method#start#0;class#MainFx#0" />
                 <element signature="method#initializeStageElements#0;class#MainFx#0" />
                 <element signature="method#onChooseSavePathClicked#0;class#MainFx#0" />
                 <element signature="method#onChooseTravelerDataClicked#0;class#MainFx#0" />
                 <element signature="method#createTicket#0;class#MainFx#0" />
-                <element signature="e#4657#4658#0" expanded="true" />
+                <element signature="method#validateInputs#0;class#MainFx#0" />
                 <element signature="method#showError#0;class#MainFx#0" />
+                <element signature="method#generateDeafultTicket#0;class#MainFx#0" />
+                <element signature="method#loadDataAndGenerateTicket#0;class#MainFx#0" />
                 <element signature="method#saveTicket#0;class#MainFx#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Ticket#0;class#Ticket#0" />
-                <element signature="method#Ticket#1;class#Ticket#0" />
-                <element signature="method#generateActivationAndValidityDate#0;class#Ticket#0" />
               </folding>
             </state>
           </provider>
@@ -150,7 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,45 +156,6 @@
               <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="DataTemplates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TicketSaver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="viewDirectory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -233,6 +170,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,7 +340,8 @@
       <workItem from="1562847182408" duration="9677000" />
       <workItem from="1562908478680" duration="19258000" />
       <workItem from="1563254580962" duration="5577000" />
-      <workItem from="1563263971687" duration="7001000" />
+      <workItem from="1563263971687" duration="9186000" />
+      <workItem from="1563277516444" duration="768000" />
     </task>
     <servers />
   </component>
@@ -439,7 +378,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53970000" />
+    <option name="totallyTimeSpent" value="56923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,7 +393,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19936034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -582,12 +521,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/viewDirectory/MainView.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="118" lean-forward="true" selection-start-line="18" selection-start-column="118" selection-end-line="18" selection-end-column="118" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -633,9 +572,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/VALID_TODAY-VALID.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/VALID_TODAY-VALID.json" />
     <entry file="file://$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-69">
@@ -659,22 +596,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/VALID_TODAY-VALID_2019-13-16T12-13-12-710.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Ticket#0;class#Ticket#0" />
-            <element signature="method#Ticket#1;class#Ticket#0" />
-            <element signature="method#generateActivationAndValidityDate#0;class#Ticket#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/VALID_TODAY-VALID_2019-13-16T12-13-12-710.json" />
     <entry file="file://$USER_HOME$/Downloads/VALID_TODAY-VALID_2019-22-16T12-22-07-476.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -689,20 +611,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Ticket#0;class#Ticket#0" />
+            <element signature="method#Ticket#1;class#Ticket#0" />
+            <element signature="method#generateActivationAndValidityDate#0;class#Ticket#0" />
+            <element signature="method#toString#0;class#Ticket#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/MainFx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+        <state relative-caret-position="35">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
             <element signature="method#start#0;class#MainFx#0" />
             <element signature="method#initializeStageElements#0;class#MainFx#0" />
             <element signature="method#onChooseSavePathClicked#0;class#MainFx#0" />
             <element signature="method#onChooseTravelerDataClicked#0;class#MainFx#0" />
             <element signature="method#createTicket#0;class#MainFx#0" />
-            <element signature="e#4657#4658#0" expanded="true" />
+            <element signature="method#validateInputs#0;class#MainFx#0" />
             <element signature="method#showError#0;class#MainFx#0" />
+            <element signature="method#generateDeafultTicket#0;class#MainFx#0" />
+            <element signature="method#loadDataAndGenerateTicket#0;class#MainFx#0" />
             <element signature="method#saveTicket#0;class#MainFx#0" />
           </folding>
         </state>

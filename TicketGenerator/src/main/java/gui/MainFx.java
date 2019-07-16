@@ -114,8 +114,10 @@ public class MainFx extends Application {
 
         Ticket newTicket = null;
 
-        if(!validateInputs())
-            showError("Error", "Wrong input combination", "Available options: \n bananana: \n - a \n - b");
+        if(!validateInputs(ticketStatus, ePassStatus))
+            showError("Error", "Wrong input combination",
+                    //todo
+                    "Available options: \n bananana: \n - a \n - b");
         else if(this.pathToSave == null)
             showError("Error", "No path to save", "Choose patch where you want to save new json file");
         else if(externalDataPath == null)
@@ -131,25 +133,30 @@ public class MainFx extends Application {
     }
 
 
-
-
-
-
-
-
-
-    //todo
-    private boolean validateInputs() {
-        return true;
+    private boolean validateInputs(Ticket.ValidityState ticketStatus,
+                                   EPassDetails.PassStatus ePassStatus) {
+        switch(ticketStatus) {
+            case NOT_STARTED:
+                if(ePassStatus.equals(EPassDetails.PassStatus.VALID) ||
+                        ePassStatus.equals(EPassDetails.PassStatus.EXPIRED))
+                    return false;
+                else
+                    return true;
+            case VALID_TODAY:
+                if(ePassStatus.equals(EPassDetails.PassStatus.NOT_STARTED) ||
+                        ePassStatus.equals(EPassDetails.PassStatus.EXPIRED))
+                    return false;
+                else
+                    return true;
+                // VALID_YESTERDAY + NOT_VALID
+                default:
+                    if (ePassStatus.equals(EPassDetails.PassStatus.VALID) ||
+                            ePassStatus.equals(EPassDetails.PassStatus.NOT_STARTED))
+                        return false;
+                    else
+                        return true;
+        } // switch
     }
-
-
-
-
-
-
-
-
 
     private void showError(String title, String header, String content) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -161,17 +168,14 @@ public class MainFx extends Application {
     }
 
     private Ticket generateDeafultTicket(Ticket.ValidityState ticketStatus, EPassDetails.PassStatus ePassStatus) {
-        //System.out.println("generateDeafultTicket");
         return new Ticket(ticketStatus, ePassStatus);
     }
 
 
     private Ticket loadDataAndGenerateTicket(Ticket.ValidityState ticketStatus,
                                            EPassDetails.PassStatus ePassStatus, String externalDataPath) {
-        //System.out.println("loadDataAndGenerateTicket");
         return new Ticket(ticketStatus, ePassStatus, externalDataPath);
     }
-
 
     private void saveTicket(Ticket newTicket) {
         StringBuilder builder = new StringBuilder();
