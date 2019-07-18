@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.112s</div>
+<div class="counter">1.847s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,6 +66,9 @@
 <li>
 <a href="#tab1">Standard output</a>
 </li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Tests</h2>
@@ -78,8 +81,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">fromFileTicketConstructionTest</td>
-<td class="success">0.112s</td>
+<td class="success">baseTest10</td>
+<td class="success">1.847s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,32 +90,90 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>
-JSON = 
-{
-  &quot;validityState&quot;: &quot;NOT_VALID&quot;,
-  &quot;activationDate&quot;: &quot;2017-02-23T21:37:27.000&quot;,
-  &quot;validityDate&quot;: &quot;2017-02-23&quot;,
-  &quot;ePassDetails&quot;: {
-    &quot;kind&quot;: &quot;France Mobile Pass&quot;,
-    &quot;type&quot;: &quot;1st class Senior &quot;,
-    &quot;traveler&quot;: {
-      &quot;fullNameSecured&quot;: &quot;D. D********k&quot;,
-      &quot;passportNumberSecured&quot;: &quot;********D4&quot;
-    },
-    &quot;status&quot;: &quot;EXPIRED&quot;,
-    &quot;validityPeriod&quot;: {
-      &quot;startDate&quot;: &quot;2017-02-17&quot;,
-      &quot;endDate&quot;: &quot;2017-03-29&quot;
-    }
-  }
-}
-
-TICKET = 
-NOT_VALID
-2017-37-23T21:37:27.000
-2017-02-23
-
+<pre>Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: select nextval ('hibernate_sequence')
+Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
+Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
+Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
+Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
+Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
+Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
+Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
+Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
+Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
+Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
+Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
+Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
+Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
+Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
+Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
+Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
+Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
+Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
+Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
+Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Jul 18, 2019 1:38:29 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.4.3.Final}
+Jul 18, 2019 1:38:30 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+Jul 18, 2019 1:38:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Jul 18, 2019 1:38:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/ticketsbase]
+Jul 18, 2019 1:38:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=postgres}
+Jul 18, 2019 1:38:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Jul 18, 2019 1:38:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections &lt;init&gt;
+INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
+Jul 18, 2019 1:38:30 PM org.hibernate.dialect.Dialect &lt;init&gt;
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+Jul 18, 2019 1:38:31 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5d518af2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 </pre>
 </span>
 </div>
@@ -124,7 +185,7 @@ NOT_VALID
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.3</a> at Jul 12, 2019, 10:13:50 AM</p>
+<a href="http://www.gradle.org">Gradle 4.10.3</a> at Jul 18, 2019, 1:38:31 PM</p>
 </div>
 </div>
 </body>

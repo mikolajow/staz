@@ -43,6 +43,11 @@ public class MyValuesGenerator {
 
     public static String passportNumber() {
         int[] ints = new Random().ints(passportDigitsNumber, 48, 91).toArray();
+        for(int i=0; i<ints.length; i++) {
+            int current = ints[i];
+            if (current < 65 && current > 57)
+                ints[i] = 70;
+        }
         String passportNumber = new String(ints, 0, passportDigitsNumber);
         return passportNumber;
     }

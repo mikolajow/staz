@@ -43,6 +43,11 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
 
     implementation 'com.github.javafaker:javafaker:0.18'
+
+    implementation 'org.hibernate:hibernate-core:5.4.3.Final'
+
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.6'
+
 }
 
 

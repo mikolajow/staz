@@ -5,6 +5,8 @@ package DataTemplates;
 
 
 import Utils.MyValuesGenerator;
+
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -12,17 +14,29 @@ import java.util.Date;
 import java.util.Random;
 
 
+@Entity
 public class Ticket {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
-
+    @Enumerated(EnumType.STRING)
+    @Column(name = "validity_state")
     private ValidityState validityState;
 
+    @Column(name = "activation_date")
     private LocalDateTime activationDate;
+    @Column(name = "validity_date")
     private LocalDate validityDate;
 
+
+    @ManyToOne(cascade = {CascadeType.PERSIST})
+    @JoinColumn (name = "e_pass_id")
     private EPassDetails ePassDetails;
 
+
+    public Ticket(){}
 
     public Ticket(ValidityState ticketStatus, EPassDetails.PassStatus ePassStatus) {
         this.validityState = ticketStatus;
@@ -64,7 +78,7 @@ public class Ticket {
         } else if (this.validityState.equals(ValidityState.VALID_YESTERDAY)) {
             this.activationDate = LocalDateTime.now().minusDays(1);
             this.validityDate = LocalDate.now().minusDays(1);
-        } else {
+        } else { // VALID_TODAY
             this.activationDate = LocalDateTime.now();
             this.validityDate = LocalDate.now();
         }
@@ -93,13 +107,6 @@ public class Ticket {
 
         return stringBuilder.toString();
     }
-
-
-
-
-
-
-
 
     public ValidityState getValidityState() {
         return validityState;

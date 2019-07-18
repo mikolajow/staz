@@ -6,14 +6,23 @@ package DataTemplates;
 import Utils.MyValuesGenerator;
 import com.google.gson.JsonObject;
 
+import javax.persistence.*;
 
+@Entity
 public class Traveler {
 
-    private final static int STAR_NUMBER = 8;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private long id;
+
+    private transient final static int STAR_NUMBER = 8;
 
     private transient String fullName;
+    @Column(name = "full_name")
     private String fullNameSecured;
     private transient String passportNumber;
+    @Column(name = "passport_number")
     private String passportNumberSecured;
 
 

@@ -3,18 +3,82 @@ import DataTemplates.Ticket;
 import TicketSaver.LocalDateAdapter;
 import TicketSaver.LocalDateTimeAdapter;
 import TicketSaver.SaverForTicket;
+import Utils.SessionFactoryHelper;
 import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 import org.junit.Test;
 
 
+import javax.persistence.EntityManager;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
 
 public class RandomTests {
+
+
+    @Test
+    public void baseTest() {
+        Session session = SessionFactoryHelper.getSessionFactory().getCurrentSession();
+        Transaction transaction = session.getTransaction();
+
+        try {
+            transaction.begin();
+
+            Ticket newTicket = new Ticket(Ticket.ValidityState.VALID_TODAY, EPassDetails.PassStatus.VALID);
+
+            session.persist(newTicket);
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null)
+                transaction.rollback();
+            e.printStackTrace();
+            System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        } finally {
+            if (session != null)
+                session.close();
+        }
+    }
+
+
+
+    @Test
+    public void baseTest10() {
+        Session session = SessionFactoryHelper.getSessionFactory().getCurrentSession();
+        Transaction transaction = session.getTransaction();
+
+        try {
+            transaction.begin();
+
+            for (int i=0; i<10; i++) {
+                Ticket newTicket = new Ticket(Ticket.ValidityState.VALID_TODAY, EPassDetails.PassStatus.VALID);
+                session.persist(newTicket);
+            }
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null)
+                transaction.rollback();
+            e.printStackTrace();
+            System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        } finally {
+            if (session != null)
+                session.close();
+        }
+    }
+
+
+
+
+
+
+
+
 
 
 

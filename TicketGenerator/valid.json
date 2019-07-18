@@ -1,18 +1,18 @@
 {
   "validityState": "VALID_TODAY",
-  "activationDate": "2019-07-12T09:50:52.465",
-  "validityDate": "2019-07-12",
+  "activationDate": "2019-07-18T07:36:24.789",
+  "validityDate": "2019-07-18",
   "ePassDetails": {
-    "kind": "Denmark Mobile Pass",
-    "type": "2nd class Adult",
+    "kind": "Norway Mobile Pass",
+    "type": "1st class Adult",
     "traveler": {
-      "fullNameSecured": "G. W********a",
-      "passportNumberSecured": "********2H"
+      "fullNameSecured": "L. O********i",
+      "passportNumberSecured": "********\u003dS"
     },
     "status": "VALID",
     "validityPeriod": {
-      "startDate": "2019-06-30",
-      "endDate": "2019-07-29"
+      "startDate": "2019-06-16",
+      "endDate": "2019-08-02"
     }
   }
 }

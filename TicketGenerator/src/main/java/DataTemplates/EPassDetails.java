@@ -5,22 +5,38 @@ package DataTemplates;
 import Utils.MyValuesGenerator;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import javax.persistence.*;
 import java.io.*;
 import java.time.LocalDate;
 import java.util.Random;
 
+@Entity
 public class EPassDetails {
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
     private String kind;
     private String type;
 
+    @OneToOne(cascade = {CascadeType.PERSIST})
+    @JoinColumn(name = "traveler_id")
     private Traveler traveler;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "e_pass_status")
     private PassStatus status;
 
-
-
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "startDate", column = @Column(name = "start_date")),
+            @AttributeOverride(name = "endDate", column = @Column(name = "end_date"))
+    })
     private ValidityPeriod validityPeriod;
+
+
 
 
     public EPassDetails(PassStatus ePassStatus, LocalDate validityDate, Ticket.ValidityState validityState) {
@@ -30,7 +46,7 @@ public class EPassDetails {
         this.kind = MyValuesGenerator.kind();
         this.type = MyValuesGenerator.type();
 
-        setValidityPeriod(validityState, validityDate);
+        generateValidPeriod(validityDate);
     }
 
 
@@ -56,46 +72,13 @@ public class EPassDetails {
             e.printStackTrace();
         }
 
-        setValidityPeriod(validityState, validityDate);
+        generateValidPeriod(validityDate);
     }
 
-
-    private void setValidityPeriod(Ticket.ValidityState validityState, LocalDate validityDate) {
-//        if(validityState.equals(Ticket.ValidityState.NOT_STARTED) ||
-//                validityState.equals(Ticket.ValidityState.NOT_VALID))
-//            notStartedOrNotValidTicketState(validityState);
-//        else
-            validPeriod(validityDate);
-    }
+    public EPassDetails() {}
 
 
-//    private void notStartedOrNotValidTicketState(Ticket.ValidityState validityState) {
-//        Random random = new Random();
-//        int changeInYears = random.nextInt(4); // 0-3
-//        int changeInMonths = random.nextInt(6); // 0-5
-//        int changeInDays = random.nextInt(21); //0-20
-//
-//        int periodTimeInDays = random.nextInt(86) + 5; // 5-90
-//
-//        LocalDate currentDate = LocalDate.now();
-//        LocalDate startPeriodDate;
-//        LocalDate finishPeriodDate;
-//
-//
-//        if (validityState.equals(Ticket.ValidityState.NOT_STARTED)) {
-//            startPeriodDate = currentDate.plusYears(changeInYears).plusMonths(changeInMonths).plusDays(changeInDays);
-//            finishPeriodDate = startPeriodDate.plusDays(periodTimeInDays);
-//        } else {
-//            startPeriodDate = currentDate.minusYears(changeInYears).minusMonths(changeInMonths).minusDays(changeInDays);
-//            finishPeriodDate = startPeriodDate.minusDays(periodTimeInDays);
-//        }
-//
-//
-//        this.validityPeriod = new ValidityPeriod(startPeriodDate, finishPeriodDate);
-//    }
-
-
-    private void validPeriod(LocalDate validityDate) {
+    private void generateValidPeriod(LocalDate validityDate) {
         Random random = new Random();
 
         int daysBackInTime = random.nextInt(45) + 3;
@@ -113,8 +96,6 @@ public class EPassDetails {
         REFUNDED,
         VALID
     } // enum PassStatus
-
-
 
 
     public PassStatus getEpassStatus() {

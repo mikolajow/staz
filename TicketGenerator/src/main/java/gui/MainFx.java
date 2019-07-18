@@ -116,8 +116,27 @@ public class MainFx extends Application {
 
         if(!validateInputs(ticketStatus, ePassStatus))
             showError("Error", "Wrong input combination",
-                    //todo
-                    "Available options: \n bananana: \n - a \n - b");
+                    "Available options: " +
+                            "\n" +
+                            "\n VALID_TODAY: " +
+                            "\n - VALID " +
+                            "\n - REFUNDED " +
+                            "\n - BLOCKED " +
+                            "\n" +
+                            "\n VALID_YESTERDAY: " +
+                            "\n - BLOCKED " +
+                            "\n - EXPIRED " +
+                            "\n - REFUNDED " +
+                            "\n" +
+                            "\n NOT_STARTED: " +
+                            "\n - REFUNDED " +
+                            "\n - NOT_STATRED " +
+                            "\n - BLOCKED " +
+                            "\n" +
+                            "\n NOT_VALID: " +
+                            "\n - BLOCKED " +
+                            "\n - EXPIRED " +
+                            "\n - REFUNDED");
         else if(this.pathToSave == null)
             showError("Error", "No path to save", "Choose patch where you want to save new json file");
         else if(externalDataPath == null)
