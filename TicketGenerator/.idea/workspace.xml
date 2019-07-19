@@ -4,42 +4,49 @@
     <list default="true" id="705dd292-106c-44b5-a5bc-a29279fd64ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a09247c9-06a2-4025-a950-5fe837193bc1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a09247c9-06a2-4025-a950-5fe837193bc1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a09247c9-06a2-4025-a950-5fe837193bc1/storage_v2/_src_/database/ticketsbase.ODKfFg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a09247c9-06a2-4025-a950-5fe837193bc1/storage_v2/_src_/database/ticketsbase.ODKfFg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/TicketGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/TicketGenerator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/TicketGenerator.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/TicketGenerator.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails$PassStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails$PassStatus.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Ticket$ValidityState.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Ticket$ValidityState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Ticket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Traveler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/Traveler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/ValidityPeriod.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DataTemplates/ValidityPeriod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/gui/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/MainFx$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/gui/MainFx$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/MainFx.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/gui/MainFx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/RandomTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/RandomTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/RandomTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/RandomTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-RandomTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-RandomTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/TicketSaver/SaverForTicket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/TicketSaver/SaverForTicket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Utils/SessionFactoryHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/MainFx$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/gui/MainFx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/RandomTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/viewDirectory/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/viewDirectory/MainView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-RandomTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/not_valid.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataTemplates/ValidityPeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataTemplates/ValidityPeriod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/MyValuesGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/MyValuesGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/SessionFactoryHelper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/MainFx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/MainFx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/viewDirectory/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/viewDirectory/MainView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RandomTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RandomTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/valid.json" beforeDir="false" afterPath="$PROJECT_DIR$/valid.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -129,15 +136,44 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="TicketGenerator" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/MainFx.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="method#start#0;class#MainFx#0" />
+                <element signature="method#initializeStageElements#0;class#MainFx#0" />
+                <element signature="method#onChooseTravelerDataClicked#0;class#MainFx#0" />
+                <element signature="method#validateInputs#0;class#MainFx#0" />
+                <element signature="method#showError#0;class#MainFx#0" />
+                <element signature="method#generateDeafultTicket#0;class#MainFx#0" />
+                <element signature="method#loadDataAndGenerateTicket#0;class#MainFx#0" />
+                <element signature="method#saveTicketToFile#0;class#MainFx#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://a09247c9-06a2-4025-a950-5fe837193bc1/database/ticketsbase/schema/public/table/traveler">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="5b25c2e5-f0ba-492c-97d4-ff37a0cca15d">
-              <filtering>
-                <filter text="" />
-              </filtering>
+        <entry file="file://$PROJECT_DIR$/src/test/java/RandomTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1680">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#ticketConstructionTest#0;class#RandomTests#0" />
+                <element signature="method#ticketConstructionTest2#0;class#RandomTests#0" />
+                <element signature="method#fromFileTicketConstructionTest#0;class#RandomTests#0" />
+                <element signature="method#dateTest#0;class#RandomTests#0" />
+                <element signature="method#passportNumberGeneratorTest#0;class#RandomTests#0" />
+                <element signature="method#dateGeneratorTest#0;class#RandomTests#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,6 +186,7 @@
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
@@ -158,6 +195,7 @@
       <find>onChooseSavePathClicked</find>
       <find>getpa</find>
       <find>setValidityPeriod</find>
+      <find>saveTicketToFile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,24 +221,32 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/MainView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/viewDirectory/MainView.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" />
         <option value="$USER_HOME$/Downloads/VALID_TODAY-VALID_2019-22-16T12-22-07-476.json" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/MainFx.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/df2501f2-1df8-40a5-bfdf-0efca9cf3734/console.sql" />
         <option value="$USER_HOME$/Desktop/hibernate notatki.txt" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/SessionFactoryHelper.java" />
         <option value="a09247c9-06a2-4025-a950-5fe837193bc1/database/ticketsbase/schema/public/sequence/hibernate_sequence" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RandomTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataTemplates/ValidityPeriod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/MyValuesGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TicketSaver/MyExclusionStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/persistance.xml.tld" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/META-INF/persistance.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/MainFx.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RandomTests.java" />
       </list>
     </option>
+  </component>
+  <component name="JavaeeView">
+    <option name="frameworksView" value="false" />
+    <option name="showModules" value="false" />
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -216,10 +262,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1656" />
-    <option name="y" value="-22" />
-    <option name="width" value="1932" />
-    <option name="height" value="1027" />
+    <option name="x" value="-9" />
+    <option name="width" value="1295" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -229,8 +274,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,6 +313,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="TicketSaver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,10 +338,41 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="viewDirectory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketGenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketGenerator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,11 +398,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mikolaj.kasperek\IdeaProjects\TicketGenerator\src\main\resources" />
-      <recent name="C:\Users\mikolaj.kasperek\IdeaProjects\TicketGenerator\lib" />
-      <recent name="C:\Users\mikolaj.kasperek\IdeaProjects\TicketGenerator\src\main\resources\viweDirectory" />
-      <recent name="C:\Users\mikolaj.kasperek\IdeaProjects\TicketGenerator\src\main\java\gui\viewFolder" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -328,8 +407,11 @@
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mikolaj.kasperek\IdeaProjects\TicketGenerator\src\main\resources" />
+      <recent name="C:\Users\mikolaj.kasperek\IdeaProjects\TicketGenerator\lib" />
+      <recent name="C:\Users\mikolaj.kasperek\IdeaProjects\TicketGenerator\src\main\resources\viweDirectory" />
+      <recent name="C:\Users\mikolaj.kasperek\IdeaProjects\TicketGenerator\src\main\java\gui\viewFolder" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -497,17 +579,13 @@
       <workItem from="1563281135385" duration="1066000" />
       <workItem from="1563350069551" duration="3244000" />
       <workItem from="1563368271909" duration="2014000" />
-      <workItem from="1563428126398" duration="15839000" />
+      <workItem from="1563428126398" duration="19325000" />
+      <workItem from="1563454491821" duration="1011000" />
+      <workItem from="1563513300901" duration="4860000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RandomTests_baseTest - 2019.07.18 at 11h 13m 00s.xml">
-      <configuration name="RandomTests.baseTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="RandomTests_baseTest - 2019.07.18 at 11h 16m 26s.xml">
-      <configuration name="RandomTests.baseTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="RandomTests_baseTest - 2019.07.18 at 11h 18m 34s.xml">
       <configuration name="RandomTests.baseTest" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -532,9 +610,15 @@
     <history-entry file="RandomTests_baseTest10 - 2019.07.18 at 13h 38m 31s.xml">
       <configuration name="RandomTests.baseTest10" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="RandomTests_baseTest10 - 2019.07.19 at 08h 43m 24s.xml">
+      <configuration name="RandomTests.baseTest10" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="RandomTests_baseTest10 - 2019.07.19 at 08h 44m 06s.xml">
+      <configuration name="RandomTests.baseTest10" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79410000" />
+    <option name="totallyTimeSpent" value="88767000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -546,33 +630,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80238503" visible="true" weight="0.15031983" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70097506" visible="true" weight="0.15351813" />
+      <window_info id="Structure" order="1" sideWeight="0.19934994" side_tool="true" weight="0.15351813" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Learn" order="7" />
-      <window_info id="Persistence" order="8" sideWeight="0.197615" side_tool="true" visible="true" weight="0.15031983" />
+      <window_info id="Favorites" order="6" sideWeight="0.19934994" side_tool="true" weight="0.15351813" />
+      <window_info id="Learn" order="7" sideWeight="0.49945828" weight="0.32995737" />
+      <window_info id="Persistence" order="8" sideWeight="0.2990249" side_tool="true" visible="true" weight="0.15351813" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36403033" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.37486458" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.31960997" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="11" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32936078" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -627,19 +711,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/w.java" />
-    <entry file="jar://C:/Program Files/java/openjdk-11.0.2_windows-x64_bin/jdk-11.0.2/lib/src.zip!/java.base/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="385" column="15" selection-start-line="385" selection-start-column="15" selection-end-line="385" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/MyDatesForStatusesGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/banana" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -707,33 +778,6 @@
     <entry file="file://$USER_HOME$/Downloads/VALID_TODAY-VALID_2019-13-16T12-13-12-710.json" />
     <entry file="file://$USER_HOME$/Downloads/VALID_TODAY-VALID_2019-22-16T12-22-07-476.json" />
     <entry file="file://$USER_HOME$/Downloads/ExampleTravelerData.json" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/MainFx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="106" column="48" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#start#0;class#MainFx#0" />
-            <element signature="method#initializeStageElements#0;class#MainFx#0" />
-            <element signature="method#onChooseSavePathClicked#0;class#MainFx#0" />
-            <element signature="method#onChooseTravelerDataClicked#0;class#MainFx#0" />
-            <element signature="method#createTicket#0;class#MainFx#0" />
-            <element signature="method#validateInputs#0;class#MainFx#0" />
-            <element signature="method#showError#0;class#MainFx#0" />
-            <element signature="method#generateDeafultTicket#0;class#MainFx#0" />
-            <element signature="method#loadDataAndGenerateTicket#0;class#MainFx#0" />
-            <element signature="method#saveTicket#0;class#MainFx#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://df2501f2-1df8-40a5-bfdf-0efca9cf3734/database/postgres/access-method/spgist" />
     <entry file="file://$USER_HOME$/Desktop/hibernate notatki.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -761,16 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://a09247c9-06a2-4025-a950-5fe837193bc1/database/ticketsbase/extension/plpgsql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -792,99 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/SessionFactoryHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RandomTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ticketConstructionTest#0;class#RandomTests#0" />
-            <element signature="method#ticketConstructionTest2#0;class#RandomTests#0" />
-            <element signature="method#fromFileTicketConstructionTest#0;class#RandomTests#0" />
-            <element signature="method#dateTest#0;class#RandomTests#0" />
-            <element signature="method#passportNumberGeneratorTest#0;class#RandomTests#0" />
-            <element signature="method#dateGeneratorTest#0;class#RandomTests#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/valid.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Ticket#1;class#Ticket#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#EPassDetails#0;class#EPassDetails#0" />
-            <element signature="method#EPassDetails#1;class#EPassDetails#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Traveler#0;class#Traveler#0" />
-            <element signature="method#setSecuredName#0;class#Traveler#0" />
-            <element signature="method#setSecuredPassportNumber#0;class#Traveler#0" />
-            <element signature="method#Traveler#1;class#Traveler#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/ValidityPeriod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a09247c9-06a2-4025-a950-5fe837193bc1/database/ticketsbase/schema/public/table/ticket">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="5b25c2e5-f0ba-492c-97d4-ff37a0cca15d">
-          <filtering>
-            <filter text="" />
-          </filtering>
         </state>
       </provider>
     </entry>
@@ -897,13 +842,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://a09247c9-06a2-4025-a950-5fe837193bc1/database/ticketsbase/schema/public/table/traveler">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="5b25c2e5-f0ba-492c-97d4-ff37a0cca15d">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/tickets/VALID_TODAY-VALID_2019-43-18T13-43-05-797.json" />
+    <entry file="file://$USER_HOME$/Downloads/tickets/VALID_TODAY-VALID_2019-45-18T13-45-04-813.json" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TicketSaver/MyExclusionStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/tickets/VALID_TODAY-VALID_2019-54-18T13-54-29-027.json" />
+    <entry file="file://$USER_HOME$/Downloads/tickets/VALID_TODAY-VALID_2019-56-18T13-56-05-055.json" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/ValidityPeriod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TicketSaver/SaverForTicket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/12.0.1/eb2eebbd957e5519332cec722ccf485674d65b4a/javafx-graphics-12.0.1-sources.jar!/javafx/stage/DirectoryChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/not_valid.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils/MyValuesGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
+        <state relative-caret-position="1029">
           <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1827#1828#0" expanded="true" />
             <element signature="e#1874#1875#0" expanded="true" />
+            <element signature="e#1913#1914#0" expanded="true" />
             <element signature="e#1959#1960#0" expanded="true" />
             <element signature="method#type#0;class#MyValuesGenerator#0" />
             <element signature="method#kind#0;class#MyValuesGenerator#0" />
@@ -911,12 +911,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://a09247c9-06a2-4025-a950-5fe837193bc1/database/ticketsbase/schema/public/table/traveler">
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistance.xml.tld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/classes/java/main/DataTemplates/EPassDetails.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistance.tld">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/EPassDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#EPassDetails#0;class#EPassDetails#0" />
+            <element signature="method#EPassDetails#1;class#EPassDetails#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Traveler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Traveler#0;class#Traveler#0" />
+            <element signature="method#setSecuredName#0;class#Traveler#0" />
+            <element signature="method#setSecuredPassportNumber#0;class#Traveler#0" />
+            <element signature="method#Traveler#1;class#Traveler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataTemplates/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Ticket#1;class#Ticket#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/SessionFactoryHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/MainFx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="method#start#0;class#MainFx#0" />
+            <element signature="method#initializeStageElements#0;class#MainFx#0" />
+            <element signature="method#onChooseTravelerDataClicked#0;class#MainFx#0" />
+            <element signature="method#validateInputs#0;class#MainFx#0" />
+            <element signature="method#showError#0;class#MainFx#0" />
+            <element signature="method#generateDeafultTicket#0;class#MainFx#0" />
+            <element signature="method#loadDataAndGenerateTicket#0;class#MainFx#0" />
+            <element signature="method#saveTicketToFile#0;class#MainFx#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a09247c9-06a2-4025-a950-5fe837193bc1/database/ticketsbase/schema/public/table/ticket">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="5b25c2e5-f0ba-492c-97d4-ff37a0cca15d">
+        <state projectRestartId="89e49437-7328-4b17-aad7-81a89b33d5de">
           <filtering>
             <filter text="" />
           </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RandomTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ticketConstructionTest#0;class#RandomTests#0" />
+            <element signature="method#ticketConstructionTest2#0;class#RandomTests#0" />
+            <element signature="method#fromFileTicketConstructionTest#0;class#RandomTests#0" />
+            <element signature="method#dateTest#0;class#RandomTests#0" />
+            <element signature="method#passportNumberGeneratorTest#0;class#RandomTests#0" />
+            <element signature="method#dateGeneratorTest#0;class#RandomTests#0" />
+          </folding>
         </state>
       </provider>
     </entry>

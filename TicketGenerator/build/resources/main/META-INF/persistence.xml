@@ -1,0 +1,55 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="2.1"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <!-- Define persistence unit -->
+    <persistence-unit name="my-persistence-unit" transaction-type="RESOURCE_LOCAL">
+        <description>Banana?</description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>DataTemplates.Ticket</class>
+        <class>DataTemplates.EPassDetails</class>
+        <class>DataTemplates.Traveler</class>
+
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+
+        <properties>
+            <!-- database connection -->
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/ticketsbase" />
+            <property name="javax.persistence.jdbc.user" value="postgres" />
+            <property name="javax.persistence.jdbc.password" value="papaj123" />
+
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL10Dialect"/>
+
+
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="show_sql" value="true"/>
+            <property name="hibernate.connection.pool_size" value="1"/>
+            <property name="current_session_context_class" value="thread"/>
+
+
+        </properties>
+    </persistence-unit>
+</persistence>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

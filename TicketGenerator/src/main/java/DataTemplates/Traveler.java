@@ -5,13 +5,14 @@ package DataTemplates;
 
 import Utils.MyValuesGenerator;
 import com.google.gson.JsonObject;
+import com.google.gson.annotations.Expose;
 
 import javax.persistence.*;
 
 @Entity
 public class Traveler {
 
-
+    @Expose(serialize = false)
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;

@@ -3,16 +3,14 @@ import DataTemplates.Ticket;
 import TicketSaver.LocalDateAdapter;
 import TicketSaver.LocalDateTimeAdapter;
 import TicketSaver.SaverForTicket;
-import Utils.SessionFactoryHelper;
 import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.junit.Test;
-
-
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -23,15 +21,16 @@ public class RandomTests {
 
     @Test
     public void baseTest() {
-        Session session = SessionFactoryHelper.getSessionFactory().getCurrentSession();
-        Transaction transaction = session.getTransaction();
+        EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("my-persistence-unit");
+        EntityManager entityManager = managerFactory.createEntityManager();
+        EntityTransaction transaction = entityManager.getTransaction();
 
         try {
             transaction.begin();
 
             Ticket newTicket = new Ticket(Ticket.ValidityState.VALID_TODAY, EPassDetails.PassStatus.VALID);
 
-            session.persist(newTicket);
+            entityManager.persist(newTicket);
 
             transaction.commit();
         } catch (Exception e) {
@@ -40,8 +39,8 @@ public class RandomTests {
             e.printStackTrace();
             System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
         } finally {
-            if (session != null)
-                session.close();
+            if (entityManager != null)
+                entityManager.close();
         }
     }
 
@@ -49,15 +48,16 @@ public class RandomTests {
 
     @Test
     public void baseTest10() {
-        Session session = SessionFactoryHelper.getSessionFactory().getCurrentSession();
-        Transaction transaction = session.getTransaction();
+        EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("my-persistence-unit");
+        EntityManager entityManager = managerFactory.createEntityManager();
+        EntityTransaction transaction = entityManager.getTransaction();
 
         try {
             transaction.begin();
 
             for (int i=0; i<10; i++) {
                 Ticket newTicket = new Ticket(Ticket.ValidityState.VALID_TODAY, EPassDetails.PassStatus.VALID);
-                session.persist(newTicket);
+                entityManager.persist(newTicket);
             }
 
             transaction.commit();
@@ -67,8 +67,8 @@ public class RandomTests {
             e.printStackTrace();
             System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
         } finally {
-            if (session != null)
-                session.close();
+            if (entityManager != null)
+                entityManager.close();
         }
     }
 

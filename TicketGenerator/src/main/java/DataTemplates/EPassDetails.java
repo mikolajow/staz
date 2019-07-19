@@ -5,6 +5,8 @@ package DataTemplates;
 import Utils.MyValuesGenerator;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import com.google.gson.annotations.Expose;
+
 import javax.persistence.*;
 import java.io.*;
 import java.time.LocalDate;
@@ -13,7 +15,7 @@ import java.util.Random;
 @Entity
 public class EPassDetails {
 
-
+    @Expose(serialize = false)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;

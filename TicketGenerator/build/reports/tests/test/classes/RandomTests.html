@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.847s</div>
+<div class="counter">1.784s</div>
 <p>duration</p>
 </div>
 </td>
@@ -64,10 +64,7 @@
 <a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
@@ -82,98 +79,36 @@
 </thead>
 <tr>
 <td class="success">baseTest10</td>
-<td class="success">1.847s</td>
+<td class="success">1.784s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
 <div id="tab1" class="tab">
-<h2>Standard output</h2>
-<span class="code">
-<pre>Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: select nextval ('hibernate_sequence')
-Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
-Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
-Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
-Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
-Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
-Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
-Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
-Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
-Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
-Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
-Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
-Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
-Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
-Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
-Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
-Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
-Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
-Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
-Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
-Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
-Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
-Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
-Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
-Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
-Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
-Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
-Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
-Hibernate: insert into Traveler (full_name, passport_number, id) values (?, ?, ?)
-Hibernate: insert into EPassDetails (kind, e_pass_status, traveler_id, type, end_date, start_date, id) values (?, ?, ?, ?, ?, ?, ?)
-Hibernate: insert into Ticket (activation_date, e_pass_id, validity_date, validity_state, id) values (?, ?, ?, ?, ?)
-</pre>
-</span>
-</div>
-<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Jul 18, 2019 1:38:29 PM org.hibernate.Version logVersion
+<pre>Jul 19, 2019 8:44:04 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: my-persistence-unit]
+Jul 19, 2019 8:44:04 AM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate Core {5.4.3.Final}
-Jul 18, 2019 1:38:30 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+Jul 19, 2019 8:44:05 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
 INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-Jul 18, 2019 1:38:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+Jul 19, 2019 8:44:05 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-Jul 18, 2019 1:38:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+Jul 19, 2019 8:44:05 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/ticketsbase]
-Jul 18, 2019 1:38:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+Jul 19, 2019 8:44:05 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=postgres}
-Jul 18, 2019 1:38:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+Jul 19, 2019 8:44:05 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-Jul 18, 2019 1:38:30 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections &lt;init&gt;
+Jul 19, 2019 8:44:05 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections &lt;init&gt;
 INFO: HHH000115: Hibernate connection pool size: 1 (min=1)
-Jul 18, 2019 1:38:30 PM org.hibernate.dialect.Dialect &lt;init&gt;
+Jul 19, 2019 8:44:05 AM org.hibernate.dialect.Dialect &lt;init&gt;
 INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-Jul 18, 2019 1:38:31 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5d518af2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Jul 19, 2019 8:44:06 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@59a1b202] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Jul 19, 2019 8:44:06 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 </pre>
 </span>
 </div>
@@ -185,7 +120,7 @@ INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.3</a> at Jul 18, 2019, 1:38:31 PM</p>
+<a href="http://www.gradle.org">Gradle 4.10.3</a> at Jul 19, 2019, 8:44:06 AM</p>
 </div>
 </div>
 </body>

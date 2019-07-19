@@ -22,6 +22,7 @@ public class SaverForTicket {
                     .setPrettyPrinting()
                     .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
                     .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
+                    .setExclusionStrategies(new MyExclusionStrategy())
                     .create();
 
             gson.toJson(ticketToSave, writer);

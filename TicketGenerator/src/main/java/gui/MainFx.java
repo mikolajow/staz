@@ -16,6 +16,11 @@ import javafx.scene.control.TextField;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -75,7 +80,9 @@ public class MainFx extends Application {
     public void onChooseSavePathClicked(ActionEvent event) {
         DirectoryChooser directoryChooser = new DirectoryChooser();
 
-        this.pathToSave = directoryChooser.showDialog(this.stage).getPath();
+        File choosenFile = directoryChooser.showDialog(this.stage);
+        if(choosenFile != null)
+            this.pathToSave = choosenFile.getPath();
 
         Button button = (Button) event.getSource();
         Scene scene = button.getScene();
@@ -90,7 +97,11 @@ public class MainFx extends Application {
     @FXML
     public void onChooseTravelerDataClicked(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
-        this.externalDataPath = fileChooser.showOpenDialog(this.stage).getPath();
+
+        File choosenFile = fileChooser.showOpenDialog(this.stage);
+        if(choosenFile != null)
+            this.externalDataPath = choosenFile.getPath();
+
 
         Button button = (Button) event.getSource();
 
@@ -146,7 +157,8 @@ public class MainFx extends Application {
 
 
         if(newTicket != null)
-            saveTicket(newTicket);
+            saveTicketToDataBase(newTicket);
+            //saveTicketToFile(newTicket);
 
         event.consume();
     }
@@ -196,7 +208,11 @@ public class MainFx extends Application {
         return new Ticket(ticketStatus, ePassStatus, externalDataPath);
     }
 
-    private void saveTicket(Ticket newTicket) {
+
+
+
+
+    private void saveTicketToFile(Ticket newTicket) {
         StringBuilder builder = new StringBuilder();
         builder
                 .append(this.pathToSave)
@@ -212,10 +228,36 @@ public class MainFx extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    } // saveTicketToFile
+
+
+    private void saveTicketToDataBase(Ticket newTicket) {
+        EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("my-persistence-unit");
+        EntityManager entityManager = managerFactory.createEntityManager();
+        EntityTransaction transaction = entityManager.getTransaction();
+
+        try {
+
+            transaction.begin();
+            entityManager.persist(newTicket);
+            transaction.commit();
+
+        } catch (Exception e) {
+            if (transaction != null)
+                transaction.rollback();
+            e.printStackTrace();
+        } finally {
+            if (entityManager != null)
+                entityManager.close();
+        }
+
     }
 
 
+
 } // class
+
+
 
 
 

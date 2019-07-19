@@ -1,11 +1,8 @@
 
-
-
 package DataTemplates;
 
-
 import Utils.MyValuesGenerator;
-
+import com.google.gson.annotations.Expose;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -17,6 +14,7 @@ import java.util.Random;
 @Entity
 public class Ticket {
 
+    @Expose(serialize = false)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
