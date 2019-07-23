@@ -26,15 +26,27 @@ public class Console {
 
     private final String WRONG_COMBINATION = "unsupported combination";
 
-    private final JCommander jcommander;
-    private final ConsolePrint consolePrint;
-    private final DataBaseSave dataBaseSave;
-    private final FileSave fileSave;
-    private final FromDbToFile fromDbToFile;
-    private final HelpCommand helpCommand;
+    private JCommander jcommander;
+    private ConsolePrint consolePrint;
+    private DataBaseSave dataBaseSave;
+    private FileSave fileSave;
+    private FromDbToFile fromDbToFile;
+    private HelpCommand helpCommand;
 
 
     public Console() {
+        prepareConsoleInterface();
+
+    }
+
+
+    public void runConsole(String[] args) {
+        this.prepareConsoleInterface();
+        this.handleInputArgs(args);
+    }
+
+
+    private void prepareConsoleInterface() {
         this.consolePrint = new ConsolePrint();
         this.dataBaseSave = new DataBaseSave();
         this.fileSave = new FileSave();
@@ -48,11 +60,6 @@ public class Console {
                 .addCommand(DB_FILE_COMMAND, fromDbToFile)
                 .addCommand(HELP_COMMAND, helpCommand)
                 .build();
-    }
-
-
-    public void runConsole(String[] args) {
-        this.handleInputArgs(args);
     }
 
 
@@ -78,8 +85,7 @@ public class Console {
                     break;
                 }
                 case HELP_COMMAND: {
-                    System.out.println(welcomeMessage);
-                    jcommander.usage();
+                    printHelp();
                     break;
                 }
             } // switch
@@ -88,8 +94,10 @@ public class Console {
             System.out.println(welcomeMessage);
             jcommander.usage();
         } catch (IllegalArgumentException e) {
+            //e.printStackTrace();
             System.out.println("wrong input data");
         } catch (NullPointerException e) {
+            //e.printStackTrace();
             System.out.println("Command is required");
         }
     }
@@ -185,6 +193,8 @@ public class Console {
 
 
     private Ticket createTicketFromStrings(String ticketStatus, String epassStatus) {
+        System.out.println(ticketStatus);
+        System.out.println(epassStatus);
         Ticket.ValidityState ticketEnum = Ticket.ValidityState.valueOf(ticketStatus);
         EPassDetails.PassStatus epassEnum = EPassDetails.PassStatus.valueOf(epassStatus);
 
@@ -243,6 +253,12 @@ public class Console {
                 .append(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH-mm-ss-SSS")))
                 .append(".json");
         return builder.toString();
+    }
+
+
+    public void printHelp() {
+        System.out.println(welcomeMessage);
+        jcommander.usage();
     }
 
 
