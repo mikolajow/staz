@@ -1,12 +1,9 @@
-
 package DataTemplates;
 
-import Utils.MyValuesGenerator;
-import com.google.gson.annotations.Expose;
+import Utils.MyTicketDataGenerator;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Random;
 
@@ -14,10 +11,21 @@ import java.util.Random;
 @Entity
 public class Ticket {
 
-    @Expose(serialize = false)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
+    public LocalDateTime getActivationDate() {
+        return activationDate;
+    }
+
+    public LocalDate getValidityDate() {
+        return validityDate;
+    }
+
+    public EPassDetails getePassDetails() {
+        return ePassDetails;
+    }
 
     @Enumerated(EnumType.STRING)
     @Column(name = "validity_state")
@@ -34,31 +42,33 @@ public class Ticket {
     private EPassDetails ePassDetails;
 
 
-    public Ticket(){}
 
+    public Ticket(){}
     public Ticket(ValidityState ticketStatus, EPassDetails.PassStatus ePassStatus) {
         this.validityState = ticketStatus;
-
         generateActivationAndValidityDate();
-
-        this.ePassDetails = new EPassDetails(ePassStatus, validityDate, validityState);
+        this.ePassDetails = new EPassDetails(ePassStatus, validityDate);
     } // random traveler constructor
 
 
     public Ticket(ValidityState ticketStatus, EPassDetails.PassStatus ePassStatus, String externalDataFilePath) {
         this.validityState = ticketStatus;
-
         generateActivationAndValidityDate();
-
-        this.ePassDetails = new EPassDetails(ePassStatus, externalDataFilePath, this.validityDate, validityState);
+        this.ePassDetails = new EPassDetails(ePassStatus, externalDataFilePath, this.validityDate);
     } // File traveler constructor
 
 
+
+
+
+
+
+    //todo gdzies to przeniesc xD
     private void generateActivationAndValidityDate() {
         if (this.validityState.equals(ValidityState.NOT_VALID) ||
                 this.validityState.equals(ValidityState.NOT_STARTED)) {
 
-            Date randomDate = MyValuesGenerator.date();
+            Date randomDate = MyTicketDataGenerator.date();
 
             int year = 1900 + randomDate.getYear();
             int month = 1 + randomDate.getMonth();
@@ -83,6 +93,12 @@ public class Ticket {
     }
 
 
+
+
+
+
+
+
     public enum ValidityState {
         VALID_TODAY,
         VALID_YESTERDAY,
@@ -90,28 +106,44 @@ public class Ticket {
         NOT_VALID
     } // enum ValidityState
 
-
-    @Override
-    public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-
-        stringBuilder
-                .append(validityState)
-                .append("\n")
-                .append(activationDate.format(DateTimeFormatter.ofPattern("yyyy-mm-dd'T'HH:mm:ss.SSS")))
-                .append("\n")
-                .append(validityDate)
-                .append("\n");
-
-        return stringBuilder.toString();
-    }
-
     public ValidityState getValidityState() {
         return validityState;
     }
 
     public EPassDetails.PassStatus getePassDetailsStatus() {
-        return ePassDetails.getEpassStatus();
+        return ePassDetails.getStatus();
+    }
+
+
+    @Override
+    public String toString() {
+        EPassDetails epass = this.getePassDetails();
+        Traveler traveler = epass.getTraveler();
+        ValidityPeriod validityPeriod = epass.getValidityPeriod();
+
+        StringBuilder builder = new StringBuilder();
+
+        return builder.append("{\n" ).append(
+                "  \"validityState\": \"" ).append( this.getValidityState() ).append( "\",\n" ).append(
+                "  \"activationDate\": \"" ).append( this.getActivationDate() ).append( "\",\n" ).append(
+                "  \"validityDate\": \"" ).append( this.getValidityDate() ).append( "\",\n" ).append(
+                "  \"ePassDetails\": {\n" ).append(
+                "    \"kind\": \"" ).append( epass.getKind() ).append( "\",\n" ).append(
+                "    \"type\": \"" ).append( epass.getType() ).append( "\",\n" ).append(
+                "    \"traveler\": {\n" ).append(
+                "      \"fullNameSecured\": \"" ).append( traveler.getFullNameSecured() ).append( "\",\n" ).append(
+                "      \"passportNumberSecured\": \"" ).append( traveler.getPassportNumberSecured() ).append( "\"\n" ).append(
+                "    },\n" ).append(
+                "    \"status\": \"" ).append( epass.getStatus() ).append( "\",\n" ).append(
+                "    \"validityPeriod\": {\n" ).append(
+                "      \"startDate\": \"" ).append( validityPeriod.getStartDate() ).append( "\",\n" ).append(
+                "      \"endDate\": \"" ).append( validityPeriod.getEndDate() ).append( "\"\n" ).append(
+                "    }\n" ).append(
+                "  }\n" ).append(
+                "}").toString();
+    }
+    public long getId() {
+        return id;
     }
 } // class
 

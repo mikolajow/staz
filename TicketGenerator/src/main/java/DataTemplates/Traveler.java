@@ -1,18 +1,11 @@
-
-
-
 package DataTemplates;
 
-import Utils.MyValuesGenerator;
-import com.google.gson.JsonObject;
-import com.google.gson.annotations.Expose;
-
+import Utils.MyTicketDataGenerator;
 import javax.persistence.*;
 
 @Entity
 public class Traveler {
 
-    @Expose(serialize = false)
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
@@ -28,15 +21,23 @@ public class Traveler {
 
 
     public Traveler() {
-        String firstName = MyValuesGenerator.firstName();
-        String lastName = MyValuesGenerator.lastName();
+        String firstName = MyTicketDataGenerator.firstName();
+        String lastName = MyTicketDataGenerator.lastName();
 
         this.fullName = firstName + " " + lastName;
         setSecuredName(firstName, lastName);
 
-        this.passportNumber = MyValuesGenerator.passportNumber();
+        this.passportNumber = MyTicketDataGenerator.passportNumber();
         setSecuredPassportNumber();
     }
+
+
+    Traveler(String firstName, String lastName, String passportNumber) {
+        this.passportNumber = passportNumber;
+        this.fullName = firstName + " " + lastName;
+        setSecuredPassportNumber();
+        setSecuredName(firstName, lastName);
+    } // constructor from file
 
 
     private void setSecuredName(String firstName, String lastName) {
@@ -54,8 +55,6 @@ public class Traveler {
 
         this.fullNameSecured = secureNameBuilder.toString();
     }
-
-
     private void setSecuredPassportNumber() {
         StringBuilder securePassportBuilder = new StringBuilder();
 
@@ -69,21 +68,12 @@ public class Traveler {
 
         this.passportNumberSecured = securePassportBuilder.toString();
     }
-
-
-    public Traveler(JsonObject travelerJson) {
-
-        String firstName = travelerJson.get("travelerName").getAsString();
-        String lastName = travelerJson.get("travelerSurname").getAsString();
-
-        this.passportNumber = travelerJson.get("passportNumber").getAsString();
-        this.fullName = firstName + " " + lastName;
-
-        setSecuredPassportNumber();
-        setSecuredName(firstName, lastName);
-    } // constructor from file
-
-
+    public String getFullNameSecured() {
+        return fullNameSecured;
+    }
+    public String getPassportNumberSecured() {
+        return passportNumberSecured;
+    }
 } // class
 
 

@@ -1,21 +1,18 @@
-
 package DataTemplates;
 
 
-import Utils.MyValuesGenerator;
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.annotations.Expose;
+import Utils.MyTicketDataGenerator;
+import Utils.MyTravelerDataReader;
 
 import javax.persistence.*;
 import java.io.*;
 import java.time.LocalDate;
-import java.util.Random;
+
+import static Utils.MyTicketDataGenerator.generateValidPeriod;
 
 @Entity
 public class EPassDetails {
 
-    @Expose(serialize = false)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -39,57 +36,27 @@ public class EPassDetails {
     private ValidityPeriod validityPeriod;
 
 
-
-
-    public EPassDetails(PassStatus ePassStatus, LocalDate validityDate, Ticket.ValidityState validityState) {
-        this.status = ePassStatus;
-        this.traveler = new Traveler();
-
-        this.kind = MyValuesGenerator.kind();
-        this.type = MyValuesGenerator.type();
-
-        generateValidPeriod(validityDate);
-    }
-
-
-
-    public EPassDetails(PassStatus ePassStatus, String externalDataFilePath,
-                        LocalDate validityDate, Ticket.ValidityState validityState) {
-        this.status = ePassStatus;
-
-        JsonObject travelerJson;
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(new File(externalDataFilePath)))) {
-
-            Gson gson = new Gson();
-            travelerJson = gson.fromJson(reader, JsonObject.class);
-
-            this.kind = travelerJson.get("passKind").getAsString();
-            this.type = travelerJson.get("passType").getAsString();
-
-            this.traveler = new Traveler(travelerJson);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        generateValidPeriod(validityDate);
-    }
-
     public EPassDetails() {}
 
+    EPassDetails(PassStatus ePassStatus, LocalDate validityDate) {
+        this.status = ePassStatus;
+        this.traveler = new Traveler();
+        this.kind = MyTicketDataGenerator.kind();
+        this.type = MyTicketDataGenerator.type();
 
-    private void generateValidPeriod(LocalDate validityDate) {
-        Random random = new Random();
-
-        int daysBackInTime = random.nextInt(45) + 3;
-        int daysForwardInTime = random.nextInt(45) + 3;
-
-        this.validityPeriod =
-                new ValidityPeriod(validityDate.minusDays(daysBackInTime), validityDate.plusDays(daysForwardInTime));
+        this.validityPeriod = generateValidPeriod(validityDate);
     }
 
+
+    EPassDetails(PassStatus ePassStatus, String externalDataFilePath,
+                 LocalDate validityDate) {
+        this.status = ePassStatus;
+        String[] data = MyTravelerDataReader.readTravelerData(externalDataFilePath);
+        this.kind = data[3];
+        this.type = data[4];
+        this.traveler = new Traveler(data[0], data[1], data[2]);
+        this.validityPeriod = generateValidPeriod(validityDate);
+    }
 
     public enum PassStatus {
         BLOCKED,
@@ -99,11 +66,29 @@ public class EPassDetails {
         VALID
     } // enum PassStatus
 
-
-    public PassStatus getEpassStatus() {
-        return this.status;
+    public long getId() {
+        return id;
     }
 
+    public String getKind() {
+        return kind;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public Traveler getTraveler() {
+        return traveler;
+    }
+
+    public PassStatus getStatus() {
+        return status;
+    }
+
+    public ValidityPeriod getValidityPeriod() {
+        return validityPeriod;
+    }
 } // class
 
 

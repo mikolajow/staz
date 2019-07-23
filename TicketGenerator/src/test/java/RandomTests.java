@@ -1,22 +1,33 @@
 import DataTemplates.EPassDetails;
 import DataTemplates.Ticket;
-import TicketSaver.LocalDateAdapter;
-import TicketSaver.LocalDateTimeAdapter;
-import TicketSaver.SaverForTicket;
+import Utils.MyTravelerDataReader;
 import com.github.javafaker.Faker;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import org.junit.Test;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.*;
 
 public class RandomTests {
+
+
+    @Test
+    public void readingTravelerTest() {
+        String[] data =
+                MyTravelerDataReader.readTravelerData(
+                        "C:\\Users\\mikolaj.kasperek\\IdeaProjects\\TicketGenerator\\ExampleTravelerData.json");
+        for(String s : data)
+            System.out.println(s);
+    }
+
+
+
+
+
+
+
+
 
 
     @Test
@@ -44,8 +55,6 @@ public class RandomTests {
         }
     }
 
-
-
     @Test
     public void baseTest10() {
         EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("my-persistence-unit");
@@ -72,122 +81,12 @@ public class RandomTests {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-    @Test
-    public void ticketConstructionTest() {
-
-        Ticket ticket = new Ticket(Ticket.ValidityState.VALID_TODAY, EPassDetails.PassStatus.VALID);
-
-        Gson gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
-                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
-                .create();
-
-        System.out.println();
-        System.out.println("JSON = ");
-        System.out.println(gson.toJson(ticket));
-
-        try {
-            SaverForTicket.saveTicketToJsonFile(ticket, "valid.json");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        System.out.println();
-        System.out.println("TICKET = ");
-        System.out.println(ticket);
-    }
-
-    @Test
-    public void ticketConstructionTest2() {
-
-        Ticket ticket = new Ticket(Ticket.ValidityState.NOT_VALID, EPassDetails.PassStatus.EXPIRED);
-
-        Gson gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
-                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
-                .create();
-
-        System.out.println();
-        System.out.println("JSON = ");
-        System.out.println(gson.toJson(ticket));
-
-        try {
-            SaverForTicket.saveTicketToJsonFile(ticket, "not_valid.json");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        System.out.println();
-        System.out.println("TICKET = ");
-        System.out.println(ticket);
-    }
-
-
-
-
-    @Test
-    public void fromFileTicketConstructionTest() {
-
-        Ticket ticket = new Ticket(Ticket.ValidityState.NOT_VALID, EPassDetails.PassStatus.EXPIRED,
-                "C:\\Users\\mikolaj.kasperek\\IdeaProjects\\TicketGenerator\\ExampleTravelerData.json");
-
-        Gson gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .registerTypeAdapter(LocalDate.class, new LocalDateAdapter())
-                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
-                .create();
-
-        System.out.println();
-        System.out.println("JSON = ");
-        System.out.println(gson.toJson(ticket));
-
-        try {
-            SaverForTicket.saveTicketToJsonFile(ticket, "not_valid.json");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        System.out.println();
-        System.out.println("TICKET = ");
-        System.out.println(ticket);
-    }
-
-
-
-
-
-
     @Test
     public void dateTest() {
 
         Date date = new Date();
         System.out.println("year= " + date.getYear() + " month= " + date.getMonth() + " day= " + date.getDay());
     }
-
-
-
-
-
-
-
-
-
 
     @Test
     public void passportNumberGeneratorTest() {
@@ -204,9 +103,6 @@ public class RandomTests {
         System.out.println("@@@@@@@@@@@@@@@@@");
         System.out.println(generatedString);
     }
-
-
-
 
     @Test
     public void dateGeneratorTest() {
@@ -236,8 +132,6 @@ public class RandomTests {
         System.out.println(firstName);
         System.out.println(lastName);
     }
-
-
 } // class
 
 
